@@ -33,4 +33,11 @@ public class NodeImpl<E> implements Node<E> {
     public void setNext(Node next) {
         this.next = next;
     }
+    @Override 
+    public boolean equals(Object o){
+        if (!(o instanceof Node)){
+            return false;
+        }
+        return (this.value.equals(((node)o.getvalue()));
+    }
 }
